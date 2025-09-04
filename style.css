@@ -1,0 +1,91 @@
+/* Global Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* Color Classes */
+
+.bg-primary {
+    background-color: #0d1b2a;
+    color: white;
+}
+
+
+
+/* Sizing for logos */
+
+.lang-logo {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.social-logo {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.large-img {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+}
+
+
+
+/* Flexbox for navigation bar */
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    a {
+        color: #E0E1DD;
+        background-color: #1B263B;
+        text-decoration: none;
+        text-align: center;
+        flex: 1;
+        padding: 20px;
+        border: 3px solid #B3AF8F;
+    }
+    a:not(:last-child) {
+      border-right: none; 
+    }
+
+    a:hover {
+      background-color: #253759; 
+    }
+}
+
+
+
+/* Footer Styles */
+
+.footer {
+    margin-top: auto; 
+    text-align: left;
+    padding: 10px;
+    background-color: #1B263B;
+    color: #E0E1DD;
+    word-spacing: 15px;
+}
+
+/* Header Styles */
+
+.main-header {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2.5em;
+    color: #E0E1DD;
+}
+
+.sub-header {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 1.5em;
+    color: #E0E1DD;
+}
