@@ -5,6 +5,17 @@
     padding: 0;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+img { 
+    max-width: 100%; 
+    height: auto; 
+}
+
 
 
 /* Color Classes */
@@ -31,8 +42,8 @@
 }
 
 .large-img {
-    width: 300px;
-    height: 300px;
+    max-width: 40%;
+    max-height: 500px;
     object-fit: contain;
 }
 
@@ -72,20 +83,66 @@
     background-color: #1B263B;
     color: #E0E1DD;
     word-spacing: 15px;
+    float: bottom;
+}
+
+@media screen and (max-width: 600px) {
+    .footer {
+        text-align: center;
+        font-size: 0.8em;
+    }
 }
 
 /* Header Styles */
 
 .main-header {
+    margin-top: 2%;
     text-align: center;
-    margin: 20px 0;
     font-size: 2.5em;
     color: #E0E1DD;
 }
 
 .sub-header {
     text-align: center;
-    margin: 10px 0;
     font-size: 1.5em;
     color: #E0E1DD;
+}
+
+/* about me page styles */
+
+.abt-me-content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #1B263B;
+    border-radius: 10px;
+    color: #E0E1DD;
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+.abt-me {
+    align-items: center;
+    align-content: center;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    margin-right: 3%;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    margin-left: 2%;
+    .large-img {
+        margin-right: 30px;
+        border: 3px solid #B3AF8F; 
+    }
+}
+
+@media (max-width: 600px) {
+    .abt-me {
+        flex-direction: column-reverse;
+        .large-img {
+            margin: 0 0 20px 0;
+        }
+    }
 }
