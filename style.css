@@ -17,6 +17,37 @@ img {
 }
 
 
+/* Font Classes */
+
+.intel-one-mono-normal {
+  font-family: "Intel One Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.intel-one-mono-bold {
+  font-family: "Intel One Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: none;
+}
+
+.intel-one-mono-italic {
+  font-family: "Intel One Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.intel-one-mono-light {
+  font-family: "Intel One Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: none;
+}
+
+
 
 /* Color Classes */
 
@@ -62,6 +93,7 @@ img {
         flex: 1;
         padding: 20px;
         border: 3px solid #B3AF8F;
+        font-size: 1.2em;
     }
     a:not(:last-child) {
       border-right: none; 
@@ -105,7 +137,7 @@ img {
 .sub-header {
     text-align: center;
     font-size: 1.5em;
-    color: #E0E1DD;
+    color: #e0e1dda7;
 }
 
 /* about me page styles */
@@ -136,6 +168,10 @@ img {
         margin-right: 30px;
         border: 3px solid #B3AF8F; 
     }
+    .content {
+        margin-top: 20px;
+        color: #e0e1dda7;
+    }
 }
 
 @media (max-width: 600px) {
@@ -144,5 +180,25 @@ img {
         .large-img {
             margin: 0 0 20px 0;
         }
+    }
+}
+
+
+
+/* skills page styles */
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10%;
+    padding: 2%;
+    list-style: none;
+    align-items: center;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    li{ 
+        margin-bottom: 4%;
     }
 }
