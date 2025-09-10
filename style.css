@@ -73,7 +73,6 @@ img {
 }
 
 .large-img {
-    max-width: 40%;
     max-height: 500px;
     object-fit: contain;
 }
@@ -149,7 +148,7 @@ img {
     background-color: #1B263B;
     border-radius: 10px;
     color: #E0E1DD;
-    font-size: 1.2em;
+    font-size: 1.0em;
     line-height: 1.6;
 }
 
@@ -160,10 +159,10 @@ img {
     flex-direction: row-reverse;
     align-items: center;
     justify-content: center;
-    margin-right: 3%;
+    margin-right: 10%;
     margin-bottom: 3%;
     margin-top: 3%;
-    margin-left: 2%;
+    margin-left: 10%;
     .large-img {
         margin-right: 30px;
         border: 3px solid #B3AF8F; 
@@ -179,7 +178,15 @@ img {
         flex-direction: column-reverse;
         .large-img {
             margin: 0 0 20px 0;
+            flex-shrink: 0;
+            min-width: 325px;
+            height: auto;
+            object-fit: contain;
+            align-self: center;
         }
+    .abt-me-content{
+        text-align: center;
+    }
     }
 }
 
